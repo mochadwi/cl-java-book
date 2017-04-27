@@ -7,7 +7,7 @@ public class Tester {
     public static void main(String args[]) {
         //Menentukan indeks nilai
         int nilai = 77;
-        char indeks;
+        char indeks; // nilai indeks, bertipe char
         if (nilai >= 80) {
             indeks = 'A';
         } else if (nilai >= 70) {
