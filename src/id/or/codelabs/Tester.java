@@ -5,20 +5,9 @@ import id.or.codelabs.model.Manusia;
 
 public class Tester {
     public static void main(String args[]) {
-        //Menentukan indeks nilai
-        int nilai = 77;
-        char indeks; // nilai indeks, bertipe char
-        if (nilai >= 80) {
-            indeks = 'A';
-        } else if (nilai >= 70) {
-            indeks = 'B';
-        } else if (nilai >= 60) {
-            indeks = 'C';
-        } else if (nilai >= 50) {
-            indeks = 'D';
-        } else {
-            indeks = 'E';
+        //Memunculkan Hello, world berulang kali
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i + ". Hello, world!");
         }
-        System.out.println("Indeks  dari nilai \"" + nilai + "\" yaitu: " + indeks );
     }
 }
