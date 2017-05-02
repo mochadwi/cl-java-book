@@ -2,11 +2,11 @@ package id.or.codelabs;
 
 public class Tester {
     public static void main(String args[]) {
-        System.out.println(displayName("Doni"));
+        displayName("Doni");
     }
 
     //Prosedur
-    private static String displayName(String name) {
-        return "Hello, " + name + "!";
+    private static void displayName(String name) {
+        System.out.println("Nama kamu: " + name);
     }
 }
