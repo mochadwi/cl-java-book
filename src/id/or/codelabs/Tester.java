@@ -6,8 +6,10 @@ import id.or.codelabs.model.Manusia;
 public class Tester {
     public static void main(String args[]) {
         //Memunculkan Hello, world berulang kali
-        for (int i = 1; i <= 10; i++) {
+        int i = 1;
+        while (i <= 5) {
             System.out.println(i + ". Hello, world!");
+            i++;
         }
     }
 }
