@@ -7,9 +7,9 @@ public class Tester {
     public static void main(String args[]) {
         //Memunculkan Hello, world berulang kali
         int i = 1;
-        while (i <= 5) {
+        do {
             System.out.println(i + ". Hello, world!");
             i++;
-        }
+        } while (i <= 5);
     }
 }
