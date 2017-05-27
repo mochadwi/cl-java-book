@@ -1,26 +1,23 @@
 package id.or.codelabs;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Tester {
-    static class Mahasiswa {
-        static String name;
-
-        public Mahasiswa() {
-            name = null;
-        }
-
-        @Override
-        public String toString() {
-            return name;
-        }
-    }
-
     public static void main(String[] args) {
-      try {
-          Mahasiswa doni = new Mahasiswa();
-          doni.name.toString();
-      } catch(NullPointerException e) {
-         System.out.println("Exception yang dimunculkan \"" + e.toString() + "\"");
-      }
-      System.out.println("Di luar block \"try and catch\"");
-   }
+        List number = new ArrayList<String>();
+        number.add("satu");
+
+        Iterator it = number.iterator(); // membuat list bisa diiterasi
+
+        while (it.hasNext()) {
+            try {
+                Integer i = (Integer) it.next();
+            } catch (ClassCastException e) {
+                System.out.println("Exception yang dimunculkan \"" + e.toString() + "\"");
+            }
+        }
+        System.out.println("Di luar block \"try and catch\"");
+    }
 }
